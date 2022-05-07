@@ -58,4 +58,18 @@ public class BiggerValueTest {
         Assertions.assertEquals(expectedResult,actualResult);
 
     }
+
+    @Test
+    public void testBiggerValueZeroBoth () {
+
+        int number1 = 0;
+        int number2 = 0;
+        int expectedResult = 0;
+
+        BiggerValue biggerValue = new BiggerValue();
+        int actualResult = biggerValue.getBiggerValue(number1,number2);
+
+        Assertions.assertEquals(expectedResult,actualResult);
+
+    }
 }
