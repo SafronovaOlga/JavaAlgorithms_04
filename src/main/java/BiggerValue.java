@@ -1,7 +1,9 @@
 public class BiggerValue {
 
     public  int getBiggerValue (int a, int b) {
-
+        if (a == b) {
+            return 0;
+        }
         if (a < Integer.MAX_VALUE && a > Integer.MIN_VALUE) {
             if ( b < Integer.MAX_VALUE && b > Integer.MIN_VALUE ) {
                 if (a > b) {

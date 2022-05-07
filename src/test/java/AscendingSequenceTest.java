@@ -70,4 +70,40 @@ public class AscendingSequenceTest {
         Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void testAscendingSequenceStartLargerThanEnd() {
+        int start = 5;
+        int end = 0;
+        int step = 2;
+        int[] expectedResult = {};
+
+        int[] actualResult = as.ascendingSequenceAlgorithm(start, end, step);
+
+        Assertions.assertArrayEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testAscendingSequenceNegativeStep() {
+        int start = 0;
+        int end = 5;
+        int step = -1;
+        int[] expectedResult = {};
+
+        int[] actualResult = as.ascendingSequenceAlgorithm(start, end, step);
+
+        Assertions.assertArrayEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testAscendingSequenceStepIsZero() {
+        int start = 5;
+        int end = 0;
+        int step = 0;
+        int[] expectedResult = {};
+
+        int[] actualResult = as.ascendingSequenceAlgorithm(start, end, step);
+
+        Assertions.assertArrayEquals(expectedResult, actualResult);
+    }
+
 }
