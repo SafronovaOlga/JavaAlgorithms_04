@@ -2,6 +2,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class OddEvenAlgorithmTest {
+
+
     @Test
     public void testOddEvenHappyPathNeg () {
         long number = -345;
@@ -13,6 +15,7 @@ public class OddEvenAlgorithmTest {
         Assertions.assertEquals(expectedResult, actualResult);
 
     }
+
 
     @Test
     public void testOddEvenNegative () {
@@ -26,6 +29,7 @@ public class OddEvenAlgorithmTest {
 
     }
 
+
     @Test
     public void testOddEvenPositive () {
         long number = 2147483648L;
@@ -37,4 +41,5 @@ public class OddEvenAlgorithmTest {
         Assertions.assertEquals(expectedResult, actualResult);
 
     }
+
 }
