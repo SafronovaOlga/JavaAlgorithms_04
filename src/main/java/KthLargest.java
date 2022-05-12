@@ -4,7 +4,9 @@ public class KthLargest {
 
         int result = 0;
         int[] sorted = {};
+
         if (k > 0 && k <= array.length) {
+
             for (int i = 0; i < array.length; i++) {
                 for (int j = i + 1; j < array.length; j++) {
                     int count;

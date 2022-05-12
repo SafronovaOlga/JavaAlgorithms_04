@@ -20,6 +20,7 @@ public class NumberOccurrences {
             int[][] result = new int[num + 1][2];
             num = 0;
             int count = 0;
+
             for (int i = 0; i < a.length; i+= count) {
                 result[num][0] = a[i];
                 count = 0;
@@ -32,6 +33,7 @@ public class NumberOccurrences {
                 result[num][1] = count;
                 num++;
             }
+
             return result;
         }
 

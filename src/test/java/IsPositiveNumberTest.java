@@ -6,7 +6,7 @@ public class IsPositiveNumberTest {
     @Test
     public void testIsPositiveNumbersPos () {
         int number = 555;
-        boolean expectedResult = true;
+       // boolean expectedResult = true;
 
         IsPositiveNumber isPositiveNumber = new IsPositiveNumber();
         boolean actualResult = isPositiveNumber.getIsPositiveNumberTrue(number);
@@ -17,7 +17,7 @@ public class IsPositiveNumberTest {
     @Test
     public void testIsPositiveNumbersZero () {
         int number = 0;
-        boolean expectedResult = true;
+      //  boolean expectedResult = true;
 
         IsPositiveNumber isPositiveNumber = new IsPositiveNumber();
         boolean actualResult = isPositiveNumber.getIsPositiveNumberTrue(number);
@@ -28,7 +28,7 @@ public class IsPositiveNumberTest {
     @Test
     public void testIsPositiveNumbersNeg () {
         int number = -555;
-        boolean expectedResult = false;
+       // boolean expectedResult = false;
 
         IsPositiveNumber isPositiveNumber = new IsPositiveNumber();
         boolean actualResult = isPositiveNumber.getIsPositiveNumberTrue(number);

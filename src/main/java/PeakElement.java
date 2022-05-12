@@ -3,6 +3,7 @@ public class PeakElement {
     public int[] getPeakElement (int[] array) {
 
         int l = 0;
+
         for (int i = 0; i < array.length; i++) {
             if ( i == 0 && array[0] > array[1]) {
                 l++;
@@ -16,6 +17,7 @@ public class PeakElement {
 
         int[] resultArray = new int[l];
         int k = 0;
+
         for (int i = 0; i < array.length; i++) {
             if (i == 0 && array[0] > array[1]) {
                 resultArray[k] = array[0];
@@ -28,6 +30,7 @@ public class PeakElement {
                 resultArray[k] = array[array.length - 1];
             }
         }
+
         return resultArray;
 
     }
