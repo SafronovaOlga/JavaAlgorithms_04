@@ -6,6 +6,7 @@ public class OddEvenAlgorithmTest {
 
     @Test
     public void testOddEvenHappyPathNeg () {
+
         long number = -345;
         String expectedResult = "Odd";
 
@@ -19,6 +20,7 @@ public class OddEvenAlgorithmTest {
 
     @Test
     public void testOddEvenNegative () {
+
         long number = -2147483649L;
         String expectedResult = "Undefined";
 
@@ -32,6 +34,7 @@ public class OddEvenAlgorithmTest {
 
     @Test
     public void testOddEvenPositive () {
+
         long number = 2147483648L;
         String expectedResult = "Undefined";
 
