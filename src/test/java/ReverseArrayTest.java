@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 public class ReverseArrayTest {
     @Test
     public void testReverseArray () {
+
         int[] array = {2, 7, 3, 10};
         int[] expectedResult = {10, 3, 7, 2};
 
